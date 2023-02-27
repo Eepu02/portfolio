@@ -9,25 +9,50 @@
     transform: scale(1.03);
 }
 
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+time {
+    font-size: 1.5rem;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .project-img {
     width: 100%;
     border-radius: var(--border-radius);
 }
 
 .related-tech-logo {
-    width: 40px;
+    height: 40px;
     margin: 3px;
     filter: brightness(var(--img-brightness));
 }
 
-.related-tech {
-    color: var(--gray);
+.card-footer {
     margin-top: auto;
+}
+
+.card-footer h3 {
+    color: var(--gray);
 }
 
 @media only screen and (min-width: 800px) {
     .wide {
         grid-column: span 2;
+    }
+    .tall {
+        grid-row: span 2;
+    }
+    .wide > .card-footer {
+        flex-direction: row;
     }
     .card-container {
         grid-auto-flow: dense;
