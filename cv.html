@@ -1,29 +1,570 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Eemil Lähteenmäki</title>
-    <link rel="stylesheet" href="styles/colors.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/cv.css">
-    <script src="index.js"></script>
-</head>
-<body>
-    <header>
-        <div class="header-items">
-            <a href="index.html"><img src="assets/logo.svg" alt="logo" class="logo-small"></a>
-            <button id="menu-btn" onclick="toggleMenu()"><img src="assets/hamburger.svg" alt="nav-menu"></button>
-        </div>
-        <nav id="menu">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="projects.html">Projects</a></li>
-                <li class="nav-item"><a href="cv.html">CV</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CV Eemil Lähteenmäki</title>
+		<link rel="stylesheet" href="styles/colors.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/cv.css" />
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div class="content">
+			<header>
+				<div class="header-items">
+					<a href="index.html"
+						><img
+							src="assets/logo.svg"
+							alt="logo"
+							class="logo-small"
+					/></a>
+					<button id="menu-btn" onclick="toggleMenu()">
+						<img src="assets/hamburger.svg" alt="nav-menu" />
+					</button>
+				</div>
+				<nav id="menu">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="index.html">Home</a></li>
+						<li class="nav-item">
+							<a href="projects.html">Projects</a>
+						</li>
+						<li class="nav-item"><a href="cv.html">CV</a></li>
+						<li class="nav-item">
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<p>
+				While many of these sound cliche, they are real skills I've
+				noticed are effective in my years of solving problems in teams.
+				Thank you our robotics team Team4Robotics!
+			</p>
+			<h1 class="script">Teamwork skills</h1>
+			<p>Nothing better than being a part of a team!</p>
+			<div class="card-container">
+				<div class="card">
+					<h2>Listening</h2>
+					<p>Listening carefully and asking a lot questions</p>
+				</div>
+				<div class="card">
+					<h2>Communication</h2>
+					<p>
+						Clear and precise communication benefits all. A team
+						member needs to be able to present their thoughts
+						effectively
+					</p>
+				</div>
+				<div class="card">
+					<h2>Team resource management</h2>
+					<p>
+						We're all different. Learning how to take advantage of
+						that is one of the key steps to making a well
+						functioning team
+					</p>
+				</div>
+			</div>
+			<h1 class="script">Problem-solving skills</h1>
+			<p>
+				Problem-solving is at the heart of what I do. More complex, more
+				better.
+			</p>
+			<div class="card-container">
+				<div class="card">
+					<h2>Subdivision</h2>
+					<p>
+						Don't tackle everything at once, it's too complicated.
+						Instead, divide and isolate the smallest problems and
+						solve them individually. That how you pull through in
+						lengthty projects!
+					</p>
+				</div>
+				<div class="card">
+					<h2>Brainstorming and discussion</h2>
+					<p>
+						Relating to teamwork skills, take advantage of the ideas
+						different people. Eventually, choose the solution as a
+						team after a discussion!
+					</p>
+				</div>
+				<div class="card">
+					<h2>Resources</h2>
+					<p>
+						Besides team resources, others like time and money often
+						have an effect on which solutions are best suited. A
+						quick fix may not be ideal, and in the best case not
+						needed (as it was planned for earlier), but in the
+						moment it may be what's needed!
+					</p>
+				</div>
+				<div class="card">
+					<h2>Testing</h2>
+					<p>
+						Solutions must be thoroughly tested, even in unexpected
+						conditions. Proper testing can alleviate many future
+						problems!
+					</p>
+				</div>
+				<div class="card">
+					<h2>Documenation</h2>
+					<p>
+						Often overlooked, documenation is the key to making
+						things run in the future.
+					</p>
+				</div>
+				<div class="card">
+					<h2>Iteration</h2>
+					<p>
+						Once you complete all the steps above, don't stop there!
+						Repeat and repeat, refine the solution. Eventually, the
+						gains will return diminishing results and you need to
+						know when to stop!
+					</p>
+				</div>
+			</div>
+			<h1 class="script">Tech skills</h1>
+			<p>
+				Tech skill vary from programming languages to software
+				applications to best practices.
+			</p>
+			<div class="card-container">
+				<div class="card">
+					<div class="card-header">
+						<h2>C/C++</h2>
+						<div class="tech-logos">
+							<img
+								src="assets/technology_logos/cplusplus-original.svg"
+								alt="cplusplus"
+								class="related-tech-logo"
+							/>
+							<img
+								src="assets/technology_logos/c-original.svg"
+								alt="c"
+								class="related-tech-logo"
+							/>
+						</div>
+					</div>
+					<p>
+						My experience in C and C++ comes mostly from my years of
+						programming competitive robotics. C and C++ are
+						performant and suitable for integrated systems such as
+						robots. Perhaps not the most ideal language to start
+						with, but at least I don't have to do it again!
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Python</h2>
+						<div class="related-tech">
+							<div class="tech-logos">
+								<img
+									src="assets/technology_logos/python-original.svg"
+									alt="python"
+									class="related-tech-logo"
+								/>
+							</div>
+						</div>
+					</div>
+					<p>
+						I use Python for most of my personal projects. Python is
+						fast to prototype but sometimes not suited for
+						production ready applications. Hence, I use it for my
+						own projects.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>HTML5/CSS3</h2>
+						<div class="related-tech">
+							<div class="tech-logos">
+								<img
+									src="assets/technology_logos/html5-original.svg"
+									alt="html5"
+									class="related-tech-logo"
+								/>
+								<img
+									src="assets/technology_logos/css3-original.svg"
+									alt="css3"
+									class="related-tech-logo"
+								/>
+							</div>
+						</div>
+					</div>
+					<p>
+						The basics of web design, I started learning HTML5 and
+						CSS3 on my own initially, and then for our
+						<a href="projects.html#roboclub-website"
+							>robotics team's website</a
+						>. Nowadays I've completed studies, so I can more
+						confidently say I know something. The main takeaway for
+						me is that I want my sites to be accessible to both
+						humans and machines.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Javascript</h2>
+						<div class="related-tech">
+							<div class="tech-logos">
+								<img
+									src="assets/technology_logos/javascript-original.svg"
+									alt="javascript"
+									class="related-tech-logo"
+								/>
+							</div>
+						</div>
+					</div>
+					<p>
+						I avoided Javascript for as long as I could, as it
+						seemed so intimidating. There were hundreds of
+						frameworks to learn. Luckily, since starting my current
+						studies, I've had a proper introduction to Javascript.
+						Although Javascript itself isn't that bad I guess.
+						Regardless I'm excited to learn more, though perhaps
+						leaning more to TypeScript.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>TypeScript</h2>
+						<div class="related-tech">
+							<div class="tech-logos">
+								<img
+									src="assets/technology_logos/typescript-original.svg"
+									alt="typescript"
+									class="related-tech-logo"
+								/>
+							</div>
+						</div>
+					</div>
+					<p>
+						And hopping straight into TypeScript, while I haven't
+						got much experience with it, I'm eager to learn more as
+						it seems great for larger projects.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Scala</h2>
+						<div class="related-tech">
+							<img
+								src="assets/technology_logos/scala-original.svg"
+								alt="scala"
+								class="related-tech-logo"
+							/>
+						</div>
+					</div>
+					<p>
+						The latest addition to my repertoir, Scala was used in
+						one of my programming courses. I was mostly familiar
+						with the syntax as it resembled C++ (Scala being based
+						on Java). I was able to strenghten my understanding of
+						object oriented programming.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Visual Basic for Applications</h2>
+					</div>
+					<p>
+						A language used to develop macros for Microsoft Office
+						products. I don't recommend it especially for large
+						applications, but it can sometimes help save some time.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Git/Github</h2>
+						<div class="related-tech">
+							<img
+								src="assets/technology_logos/github-original.svg"
+								alt="github"
+								class="related-tech-logo"
+							/>
+						</div>
+					</div>
+					<p>
+						Version control became an obvious pitfall in 2018 when
+						our robotics team, now with 2 programmers, got a sync
+						conflict in our Dropbox folder! Previously, version
+						control had been done with naming files "xxx-v1.5.cpp",
+						but now a proper solution was needed! Thus, we moved to
+						using Github, enabling collaboration and version
+						control. Learning from mistakes is fun, isn't it?
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Databases</h2>
+						<div class="related-tech">
+							<img
+								src="assets/technology_logos/postgresql-original.svg"
+								alt="postgresql"
+								class="related-tech-logo"
+							/>
+						</div>
+					</div>
+					<p>
+						Handling data in Excel is so convenient, no? After
+						developing my
+						<a href="projects.html#asunnot">real estate tracker</a>,
+						it became evident that storing data as JSON or .xlsx
+						wasn't going to cut it. My database of choice was
+						PostgreSQL due it's vast Python support, large variety
+						of data types as well as open-sourcness. <br /><br />In
+						the spring of 2023, I'm taking a course in databases to
+						deepen my understanding.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Microsoft 365 (Office)</h2>
+						<div class="related-tech">
+							<img
+								src="assets/technology_logos/ms-office.svg"
+								alt="office"
+								class="related-tech-logo"
+							/>
+						</div>
+					</div>
+					<p>
+						A surprising amount of people don't know how to use
+						basic office tools to their full potential. Large and
+						well formatted documents in Word? Check. Large datasets
+						and complex filters in Excel? Check. Beautiful and
+						interactive presentations with PowerPoint? Check. On top
+						of this, I've experiemented with many more apps like
+						Visio for creating flow charts.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Blender 3D</h2>
+						<div class="related-tech">
+							<img
+								src="assets/technology_logos/blender-original.svg"
+								alt="blender"
+								class="related-tech-logo"
+							/>
+						</div>
+					</div>
+					<p>
+						One of the greatest successes of open source projects,
+						Blender is my go-to suite for all things 3D. I started
+						back in 2014 and I've done mainly abstract art, some of
+						which you can see on the
+						<a href="projects.html">projects page</a>. In the future
+						I'll be experimenting with more photorealistic renders
+						as well.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Fusion 360</h2>
+						<div class="related-tech">
+							<img
+								src="assets/technology_logos/fusion_360.png"
+								alt="fusion360"
+								class="related-tech-logo"
+							/>
+						</div>
+					</div>
+					<p>
+						A CAD (Computer assisted modelling) software I've been
+						periodically using since 2017. It can be used for
+						engineering drawings for 3D printing, for example. Our
+						robotics team's CAD designs were made in Fusion 360.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Figma</h2>
+						<div class="related-tech">
+							<img
+								src="assets/technology_logos/figma-original.svg"
+								alt="figma"
+								class="related-tech-logo"
+							/>
+						</div>
+					</div>
+					<p>
+						A web design app focused on web design. This website was
+						designed in Figma! I'm eager to use Figma on my other
+						projects as well, like the
+						<a
+							href="pro
+                        #dashboard"
+							>real time train dashboard</a
+						>.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Terminal</h2>
+					</div>
+					<p>
+						While I'm not a terminal super-user, I know how to get
+						around and at the very least search online if I don't
+						know! Regardless, knowing the basics of the Linux
+						terminal is a key skill, even if you're not interacting
+						with it daily.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Visual Studio Code</h2>
+						<div class="related-tech">
+							<img
+								src="assets/technology_logos/vscode-original.svg"
+								alt="vs-code"
+								class="related-tech-logo"
+							/>
+						</div>
+					</div>
+					<p>
+						Not to be confused with Visual Studio, it's my go-to
+						code editor. While not a full blown IDE, it does the job
+						with its countless add-ons. I've also used Atom,
+						Notepad++ and IntelliJ.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>GIMP</h2>
+						<div class="related-tech">
+							<img
+								src="assets/technology_logos/gimp.svg"
+								alt="gimp"
+								class="related-tech-logo"
+							/>
+						</div>
+					</div>
+					<p>
+						A little bit of photo editing magic is sometimes needed,
+						and GIMP does the job well. My experience is limited to
+						the basics at the moment but that's all I need.
+						Previously I've also used PAINT.NET.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>DaVinci Resolve</h2>
+						<div class="related-tech">
+							<img
+								src="assets/technology_logos/davinci-resolve.svg"
+								alt="davinci-resolve"
+								class="related-tech-logo"
+							/>
+						</div>
+					</div>
+					<p>
+						My current video editing suite of choice for my videos.
+						I love to express my creativity in video form.
+					</p>
+				</div>
+			</div>
+			<h1 class="script">Language skills</h1>
+			<p>Language is the means to proper communication!</p>
+			<div class="card-container">
+				<div class="card">
+					<div class="card-header">
+						<h2>Finnish</h2>
+						<img
+							src="assets/country_flags/fi.svg"
+							alt="fi"
+							class="related-tech-logo"
+						/>
+					</div>
+					<p>
+						My native language. In the tech world, many terms are
+						commonly only referred to in English, when a Finnish or
+						other language alternative is available. That being
+						said, hopefully a Finnish version of this site is coming
+						soon... I'm also strict on correct grammar and spelling
+						in all my written work and in all languages (sorry for
+						any mistakes!)
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>English</h2>
+						<img
+							src="assets/country_flags/gb.svg"
+							alt="gb"
+							class="related-tech-logo"
+						/>
+					</div>
+					<p>
+						I'm fully fluent in English, both written and spoken.
+						I've been learning since 3rd grade and consume most of
+						my media in English. This website is in English for the
+						international audience!
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Swedish</h2>
+						<img
+							src="assets/country_flags/se.svg"
+							alt="se"
+							class="related-tech-logo"
+						/>
+					</div>
+					<p>
+						After learnign Swedish in school and including it in my
+						matriculation examination, it's on a good level, but
+						since I don't use it much, I need some time to warm up!
+					</p>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2>Spanish</h2>
+						<img
+							src="assets/country_flags/es.svg"
+							alt="es"
+							class="related-tech-logo"
+						/>
+					</div>
+					<p>
+						I strated learning Spanish in high school and included
+						it in my matriculation examination. I can definitely
+						understand written Spanish better than spoken, but just
+						like Swedish I need some warm up time!
+					</p>
+				</div>
+			</div>
+			<h1 class="script">Education</h1>
+			<p>The most relevant ones, of course.</p>
+			<div class="card-container">
+				<div class="card">
+					<div class="card-header">
+						<h2 class="project-header">
+							Information networks, B.Sc.
+						</h2>
+						<time>2023-now</time>
+					</div>
+					My current studies at Aalto University School of Science
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2 class="project-header">
+							Matriculation examination
+						</h2>
+						<time>2018-2021</time>
+					</div>
+					Or just high school if you prefer. I studied at Riihimäen
+					lukio in Riihimäki.
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h2 class="project-header">Military service</h2>
+						<time>2021-2022</time>
+					</div>
+					NCO
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

@@ -1,139 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Source+Sans+3&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Source+Sans+3&display=swap");
 /* @import url(styles/colors.css); */
 
 html {
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+	font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-size: 16px;
-    overflow-x: hidden;
-    margin: 0;
-    box-sizing: border-box;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-size: 16px;
+	overflow-x: hidden;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-h1, h2 {
-    font-family: 'Source Sans 3', sans-serif;
+h1,
+h2 {
+	font-family: "Source Sans 3", sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: var(--text-color);
+	text-decoration: none;
+	color: var(--text-color);
 }
 
 header ul {
-    list-style: none;
+	list-style: none;
 }
 
 header {
-    background-color: var(--background-color);
-    position: sticky;
-    top: 1rem;
-    margin: 1rem;
-    z-index: 2;
-    border-radius: var(--border-radius);
-    box-shadow: -5px -5px 10px var(--light-shadow), 5px 5px 10px var(--dark-shadow);
+	background-color: var(--background-color);
+	position: sticky;
+	top: 1rem;
+	margin: 1rem;
+	z-index: 2;
+	border-radius: var(--border-radius);
+	box-shadow: -5px -5px 10px var(--light-shadow),
+		5px 5px 10px var(--dark-shadow);
 }
 
 .header-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0.5rem;
-    margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0.5rem;
+	margin: 0;
 }
 
 .nav-list {
-    text-align: right;
-    padding: 2rem;
+	text-align: right;
+	padding: 2rem;
 }
 
 .nav-item {
-    margin: 1rem;
-    color: var(--text-color);
+	margin: 1rem;
+	color: var(--text-color);
 }
 .nav-item a {
-    position: relative;
+	position: relative;
 }
 
 .nav-item a::after {
-    content: '';
-    width: 0;
-    background-color: var(--text-color);
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transition: all 0.2s ease;
+	content: "";
+	width: 0;
+	background-color: var(--text-color);
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transition: all 0.2s ease;
 }
 
 .nav-item a:hover::after {
-    width: 100%;
-    left: 0;
+	width: 100%;
+	left: 0;
 }
 
 nav {
-    display: none;
+	display: none;
 }
 
 .visible {
-    display: block;
+	display: block;
 }
 
 button {
-    background-color: var(--bg-color);
-    border: none;
+	background-color: var(--bg-color);
+	border: none;
 }
 
 .logo-small {
-    width: 40px;
+	width: 40px;
 }
 
 .card-container {
-    display: flex;
-    padding: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	padding: 1rem;
 }
 
 .card {
-    margin: 1rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    border-radius: var(--border-radius);
-    background-color: var(--background-color);
-    box-shadow: -5px -5px 10px var(--light-shadow), 5px 5px 10px var(--dark-shadow);
-    transition: all 0.5s ease;
+	margin: 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: var(--border-radius);
+	background-color: var(--background-color);
+	box-shadow: -5px -5px 10px var(--light-shadow),
+		5px 5px 10px var(--dark-shadow);
+	transition: all 0.5s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+time {
+	font-size: 1.5rem;
+}
+
+.card-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: auto;
+}
+
+.related-tech-logo {
+	height: 40px;
+	margin: 3px;
+	filter: brightness(var(--img-brightness));
 }
 
 @media only screen and (min-width: 800px) {
-    .content {
-        width: 80%;
-        margin: auto;
-    }
-    
-    #menu-btn {
-        display: none;
-    }
+	.content {
+		width: 80%;
+		margin: auto;
+	}
 
-    nav {
-        display: block;
-        margin-left: auto;
-    }
+	#menu-btn {
+		display: none;
+	}
 
-    .nav-list {
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
+	nav {
+		display: block;
+		margin-left: auto;
+	}
 
-    header {
-        display: flex;
-    }
+	.nav-list {
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+
+	header {
+		display: flex;
+	}
 }

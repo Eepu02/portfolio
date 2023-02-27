@@ -1,213 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eemil Lähteenmäki</title>
-    <link rel="stylesheet" href="styles/colors.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="index.js"></script>
-</head>
-<body>
-    <div class="content">
-        <header>
-            <div class="header-items">
-                <a href="index.html"><img src="assets/logo.svg" alt="logo" class="logo-small"></a>
-                <button id="menu-btn" onclick="toggleMenu()"><img src="assets/hamburger.svg" alt="nav-menu"></button>
-            </div>
-            <nav id="menu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a href="cv.html">CV</a></li>
-                    <li class="nav-item"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="landing-screen">
-            <h1 class="script">Hello</h1>
-            <p class="me">I'm</p>
-            <div class="tagline-wrapper">
-                <ul>
-                    <li class="adjetive-list">developer</li>
-                    <li class="adjetive-list">designer</li>
-                    <li class="adjetive-list">coffee lover</li>
-                    <li class="adjetive-list">enthusiast</li>
-                    <li class="adjetive-list">roboticist</li>
-                    <li class="adjetive-list">3D-artist</li>
-                    <li class="adjetive-list">learner</li>
-                    <li class="adjetive-list">adventurer</li>
-                    <li class="adjetive-list">explorer</li>
-                    <li class="adjetive-list">tinkerer</li>
-                    <li class="adjetive-list">maker</li>
-                    <li class="adjetive-list">thrill-seeker</li>
-                    <li class="adjetive-list">programmer</li>
-                    <li class="adjetive-list">kinda tired</li>
-                    <li class="adjetive-list">jobless</li>
-                    <li class="adjetive-list">Eemil</li>
-                </ul>
-            </div>
-            <a href="#projects" class="scroll-hint">
-                <img src="assets/scroll_hint.svg" alt="scroll">
-            </a>
-        </section>
-        <section class="projects" id="projects">
-            <div class="card-container">
-                <a class="card" href="projects.html#projectX">
-                    <h2 class="project-header">Project X</h2>
-                    <p class="project-desc">Lorem ipsum lyhyt kuvaus</p>
-                    <div class="related-tech">
-                        <p>Related technologies</p>
-                        <div class="tech-logos">
-                            <img src="assets/technology_logos/scala-original.svg" alt="scala" class="related-tech-logo">
-                            <img src="assets/technology_logos/postgresql-original.svg" alt="postgres" class="related-tech-logo">
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="projects.html#projectY">
-                    <h2 class="project-header">Project Y</h2>
-                    <p class="project-desc">Lorem ipsum lyhyt kuvaus</p>
-                    <img src="assets/project_images/0159.webp" alt="project Y" class="project-img">
-                    <div class="related-tech">
-                        <p>Related technologies</p>
-                        <div class="tech-logos">
-                            <img src="assets/technology_logos/figma-original.svg" alt="figma" class="related-tech-logo">
-                        </div>
-                    </div>
-                </a>
-                <div class="project-link-container">
-                    <a href="projects.html" class="project-link">
-                        <p>See all my projects</p>
-                        <img src="assets/scroll_hint.svg" alt="scroll" id="projects-arrow">
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="technologies">
-                <div class="logo-row odd">
-                    <img src="assets/technology_logos/typescript-original.svg" alt="typescript" class="logo">
-                    <img src="assets/technology_logos/c-original.svg" alt="c" class="logo">
-                    <img src="assets/technology_logos/scala-original.svg" alt="scala" class="logo">
-                    <img src="assets/technology_logos/blender-original.svg" alt="blender 3d" class="logo">
-                    <img src="assets/technology_logos/nodejs-original.svg" alt="nodejs" class="logo">
-    
-                    <img src="assets/technology_logos/docker-original.svg" alt="docker" class="logo">
-                    <img src="assets/technology_logos/denojs-original.svg" alt="deno" class="logo">
-                    <img src="assets/technology_logos/css3-original.svg" alt="css" class="logo">
-                    <img src="assets/technology_logos/cplusplus-original.svg" alt="c++" class="logo">
-                    <img src="assets/technology_logos/markdown-original.svg" alt="markdown" class="logo">
-    
-                    <img src="assets/technology_logos/typescript-original.svg" alt="typescript" class="logo">
-                    <img src="assets/technology_logos/c-original.svg" alt="c" class="logo">
-                    <img src="assets/technology_logos/scala-original.svg" alt="scala" class="logo">
-                    <img src="assets/technology_logos/blender-original.svg" alt="blender 3d" class="logo">
-                    <img src="assets/technology_logos/nodejs-original.svg" alt="nodejs" class="logo">
-    
-                    <img src="assets/technology_logos/docker-original.svg" alt="docker" class="logo">
-                    <img src="assets/technology_logos/denojs-original.svg" alt="deno" class="logo">
-                    <img src="assets/technology_logos/css3-original.svg" alt="css" class="logo">
-                    <img src="assets/technology_logos/cplusplus-original.svg" alt="c++" class="logo">
-                    <img src="assets/technology_logos/markdown-original.svg" alt="markdown" class="logo">
-                </div>
-                <div class="logo-row even">
-                    <img src="assets/technology_logos/numpy-original.svg" alt="numpy" class="logo">
-                    <img src="assets/technology_logos/figma-original.svg" alt="figma" class="logo">
-                    <img src="assets/technology_logos/python-original.svg" alt="python" class="logo">
-                    <img src="assets/technology_logos/postgresql-original.svg" alt="postgres" class="logo">
-                    <img src="assets/technology_logos/vscode-original.svg" alt="postgres" class="logo">
-    
-                    <img src="assets/technology_logos/magento-original.svg" alt="magento" class="logo">
-                    <img src="assets/technology_logos/javascript-original.svg" alt="javascript" class="logo">
-                    <img src="assets/technology_logos/intellij-original.svg" alt="intellij" class="logo">
-                    <img src="assets/technology_logos/html5-original.svg" alt="html5" class="logo">
-                    <img src="assets/technology_logos/github-original.svg" alt="github" class="logo">
-    
-                    <img src="assets/technology_logos/numpy-original.svg" alt="numpy" class="logo">
-                    <img src="assets/technology_logos/figma-original.svg" alt="figma" class="logo">
-                    <img src="assets/technology_logos/python-original.svg" alt="python" class="logo">
-                    <img src="assets/technology_logos/postgresql-original.svg" alt="postgres" class="logo">
-                    <img src="assets/technology_logos/vscode-original.svg" alt="postgres" class="logo">
-                </div>
-                <h2 class="my-tech">My technologies</h2>
-                <div class="logo-row odd">
-                    <img src="assets/technology_logos/magento-original.svg" alt="magento" class="logo">
-                    <img src="assets/technology_logos/javascript-original.svg" alt="javascript" class="logo">
-                    <img src="assets/technology_logos/intellij-original.svg" alt="intellij" class="logo">
-                    <img src="assets/technology_logos/html5-original.svg" alt="html5" class="logo">
-                    <img src="assets/technology_logos/github-original.svg" alt="github" class="logo">
-    
-                    <img src="assets/technology_logos/numpy-original.svg" alt="numpy" class="logo">
-                    <img src="assets/technology_logos/figma-original.svg" alt="figma" class="logo">
-                    <img src="assets/technology_logos/python-original.svg" alt="python" class="logo">
-                    <img src="assets/technology_logos/postgresql-original.svg" alt="postgres" class="logo">
-                    <img src="assets/technology_logos/vscode-original.svg" alt="postgres" class="logo">
-    
-                    <img src="assets/technology_logos/magento-original.svg" alt="magento" class="logo">
-                    <img src="assets/technology_logos/javascript-original.svg" alt="javascript" class="logo">
-                    <img src="assets/technology_logos/intellij-original.svg" alt="intellij" class="logo">
-                    <img src="assets/technology_logos/html5-original.svg" alt="html5" class="logo">
-                    <img src="assets/technology_logos/github-original.svg" alt="github" class="logo">
-    
-                    <img src="assets/technology_logos/numpy-original.svg" alt="numpy" class="logo">
-                    <img src="assets/technology_logos/figma-original.svg" alt="figma" class="logo">
-                    <img src="assets/technology_logos/python-original.svg" alt="python" class="logo">
-                    <img src="assets/technology_logos/postgresql-original.svg" alt="postgres" class="logo">
-                    <img src="assets/technology_logos/vscode-original.svg" alt="postgres" class="logo">
-                </div>
-                <div class="logo-row even">
-                    <img src="assets/technology_logos/docker-original.svg" alt="docker" class="logo">
-                    <img src="assets/technology_logos/denojs-original.svg" alt="deno" class="logo">
-                    <img src="assets/technology_logos/css3-original.svg" alt="css" class="logo">
-                    <img src="assets/technology_logos/cplusplus-original.svg" alt="c++" class="logo">
-                    <img src="assets/technology_logos/markdown-original.svg" alt="markdown" class="logo">
-    
-                    <img src="assets/technology_logos/typescript-original.svg" alt="typescript" class="logo">
-                    <img src="assets/technology_logos/c-original.svg" alt="c" class="logo">
-                    <img src="assets/technology_logos/scala-original.svg" alt="scala" class="logo">
-                    <img src="assets/technology_logos/blender-original.svg" alt="blender 3d" class="logo">
-                    <img src="assets/technology_logos/nodejs-original.svg" alt="nodejs" class="logo">
-                    
-                    <img src="assets/technology_logos/docker-original.svg" alt="docker" class="logo">
-                    <img src="assets/technology_logos/denojs-original.svg" alt="deno" class="logo">
-                    <img src="assets/technology_logos/css3-original.svg" alt="css" class="logo">
-                    <img src="assets/technology_logos/cplusplus-original.svg" alt="c++" class="logo">
-                    <img src="assets/technology_logos/markdown-original.svg" alt="markdown" class="logo">
-                </div>
-        </section>
-        <section class="contact">
-            <h2>Contact</h2>
-            <svg fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-large">
-                <g id="e_letter">
-                    <g id="logo_group_1">
-                        <path d="M70.7682 1.5642L0 54.7471H22.2049C45.758 36.6368 70.7682 17.7276 70.7682 17.7276V1.5642Z" fill="#758DE1"/>
-                        <path d="M0 54.7471V71.9533C6.57244 66.8032 14.3067 60.82 22.2049 54.7471H0Z" fill="#8782E3"/>
-                    </g>
-                    <g id="logo_group_2">
-                        <path d="M22.2049 54.7471C14.3067 60.82 6.57244 66.8032 0 71.9533H50.2827L70.7682 54.7471H22.2049Z" fill="#9A78E5"/>
-                        <path d="M70.7682 71.9533V54.7471L50.2827 71.9533H70.7682Z" fill="#AD6DE8"/>
-                    </g>
-                    <g id="logo_group_3">
-                        <path d="M70.7682 71.9533H50.2827L0 114.187H22.5983L70.7682 71.9533Z" fill="#C063EA"/>
-                        <path d="M0 114.187V134L22.5983 114.187H0Z" fill="#D358EC"/>
-                    </g>
-                    <g id="logo_group_4">
-                        <path d="M0 134H70.7682V114.187H22.5983L0 134Z" fill="#E64EEF"/>
-                    </g>
-                </g>
-                <g id="l_letter">
-                    <g id="logo_group_5">
-                        <path d="M91.947 0V114.187H110.543V0H91.947Z" fill="#758DE1"/>
-                    </g>
-                    <g id="logo_group_6">
-                        <path d="M156 134V114.187H110.543V134H156Z" fill="#E64EEF"/>
-                        <path d="M110.543 114.187H91.947L110.543 134V114.187Z" fill="#AD6DE8"/>
-                    </g>
-                </g>
-            </svg>                
-            <a href="contact.html" class="contact-btn">Contact me</a>
-        </section>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Eemil Lähteenmäki</title>
+		<link rel="stylesheet" href="styles/colors.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div class="content">
+			<header>
+				<div class="header-items">
+					<a href="index.html"
+						><img
+							src="assets/logo.svg"
+							alt="logo"
+							class="logo-small"
+					/></a>
+					<button id="menu-btn" onclick="toggleMenu()">
+						<img src="assets/hamburger.svg" alt="nav-menu" />
+					</button>
+				</div>
+				<nav id="menu">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="index.html">Home</a></li>
+						<li class="nav-item">
+							<a href="projects.html">Projects</a>
+						</li>
+						<li class="nav-item"><a href="cv.html">CV</a></li>
+						<li class="nav-item">
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section class="landing-screen">
+				<h1 class="script">Hello</h1>
+				<p class="me">I'm</p>
+				<div class="tagline-wrapper">
+					<ul>
+						<li class="adjetive-list">developer</li>
+						<li class="adjetive-list">designer</li>
+						<li class="adjetive-list">coffee lover</li>
+						<li class="adjetive-list">enthusiast</li>
+						<li class="adjetive-list">roboticist</li>
+						<li class="adjetive-list">3D-artist</li>
+						<li class="adjetive-list">learner</li>
+						<li class="adjetive-list">adventurer</li>
+						<li class="adjetive-list">explorer</li>
+						<li class="adjetive-list">tinkerer</li>
+						<li class="adjetive-list">maker</li>
+						<li class="adjetive-list">thrill-seeker</li>
+						<li class="adjetive-list">programmer</li>
+						<li class="adjetive-list">kinda tired</li>
+						<li class="adjetive-list">jobless</li>
+						<li class="adjetive-list">Eemil</li>
+					</ul>
+				</div>
+				<a href="#projects" class="scroll-hint">
+					<img src="assets/scroll_hint.svg" alt="scroll" />
+				</a>
+			</section>
+			<section class="projects" id="projects">
+				<div class="card-container">
+					<a class="card" href="projects.html#projectX">
+						<h2 class="project-header">Project X</h2>
+						<p class="project-desc">Lorem ipsum lyhyt kuvaus</p>
+						<div class="related-tech">
+							<p>Related technologies</p>
+							<div class="tech-logos">
+								<img
+									src="assets/technology_logos/scala-original.svg"
+									alt="scala"
+									class="related-tech-logo"
+								/>
+								<img
+									src="assets/technology_logos/postgresql-original.svg"
+									alt="postgres"
+									class="related-tech-logo"
+								/>
+							</div>
+						</div>
+					</a>
+					<a class="card" href="projects.html#projectY">
+						<h2 class="project-header">Project Y</h2>
+						<p class="project-desc">Lorem ipsum lyhyt kuvaus</p>
+						<img
+							src="assets/project_images/0159.webp"
+							alt="project Y"
+							class="project-img"
+						/>
+						<div class="related-tech">
+							<p>Related technologies</p>
+							<div class="tech-logos">
+								<img
+									src="assets/technology_logos/figma-original.svg"
+									alt="figma"
+									class="related-tech-logo"
+								/>
+							</div>
+						</div>
+					</a>
+					<div class="project-link-container">
+						<a href="projects.html" class="project-link">
+							<p>See all my projects</p>
+							<img
+								src="assets/scroll_hint.svg"
+								alt="scroll"
+								id="projects-arrow"
+							/>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="technologies">
+				<div class="logo-row odd">
+					<img
+						src="assets/technology_logos/typescript-original.svg"
+						alt="typescript"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/c-original.svg"
+						alt="c"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/scala-original.svg"
+						alt="scala"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/blender-original.svg"
+						alt="blender 3d"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/nodejs-original.svg"
+						alt="nodejs"
+						class="logo"
+					/>
+
+					<img
+						src="assets/technology_logos/docker-original.svg"
+						alt="docker"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/denojs-original.svg"
+						alt="deno"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/css3-original.svg"
+						alt="css"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/cplusplus-original.svg"
+						alt="c++"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/markdown-original.svg"
+						alt="markdown"
+						class="logo"
+					/>
+
+					<img
+						src="assets/technology_logos/typescript-original.svg"
+						alt="typescript"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/c-original.svg"
+						alt="c"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/scala-original.svg"
+						alt="scala"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/blender-original.svg"
+						alt="blender 3d"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/nodejs-original.svg"
+						alt="nodejs"
+						class="logo"
+					/>
+
+					<img
+						src="assets/technology_logos/docker-original.svg"
+						alt="docker"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/denojs-original.svg"
+						alt="deno"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/css3-original.svg"
+						alt="css"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/cplusplus-original.svg"
+						alt="c++"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/markdown-original.svg"
+						alt="markdown"
+						class="logo"
+					/>
+				</div>
+				<div class="logo-row even">
+					<img
+						src="assets/technology_logos/numpy-original.svg"
+						alt="numpy"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/figma-original.svg"
+						alt="figma"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/python-original.svg"
+						alt="python"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/postgresql-original.svg"
+						alt="postgres"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/vscode-original.svg"
+						alt="postgres"
+						class="logo"
+					/>
+
+					<img
+						src="assets/technology_logos/magento-original.svg"
+						alt="magento"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/javascript-original.svg"
+						alt="javascript"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/intellij-original.svg"
+						alt="intellij"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/html5-original.svg"
+						alt="html5"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/github-original.svg"
+						alt="github"
+						class="logo"
+					/>
+
+					<img
+						src="assets/technology_logos/numpy-original.svg"
+						alt="numpy"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/figma-original.svg"
+						alt="figma"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/python-original.svg"
+						alt="python"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/postgresql-original.svg"
+						alt="postgres"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/vscode-original.svg"
+						alt="postgres"
+						class="logo"
+					/>
+				</div>
+				<h2 class="my-tech">My technologies</h2>
+				<div class="logo-row odd">
+					<img
+						src="assets/technology_logos/magento-original.svg"
+						alt="magento"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/javascript-original.svg"
+						alt="javascript"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/intellij-original.svg"
+						alt="intellij"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/html5-original.svg"
+						alt="html5"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/github-original.svg"
+						alt="github"
+						class="logo"
+					/>
+
+					<img
+						src="assets/technology_logos/numpy-original.svg"
+						alt="numpy"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/figma-original.svg"
+						alt="figma"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/python-original.svg"
+						alt="python"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/postgresql-original.svg"
+						alt="postgres"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/vscode-original.svg"
+						alt="postgres"
+						class="logo"
+					/>
+
+					<img
+						src="assets/technology_logos/magento-original.svg"
+						alt="magento"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/javascript-original.svg"
+						alt="javascript"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/intellij-original.svg"
+						alt="intellij"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/html5-original.svg"
+						alt="html5"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/github-original.svg"
+						alt="github"
+						class="logo"
+					/>
+
+					<img
+						src="assets/technology_logos/numpy-original.svg"
+						alt="numpy"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/figma-original.svg"
+						alt="figma"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/python-original.svg"
+						alt="python"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/postgresql-original.svg"
+						alt="postgres"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/vscode-original.svg"
+						alt="postgres"
+						class="logo"
+					/>
+				</div>
+				<div class="logo-row even">
+					<img
+						src="assets/technology_logos/docker-original.svg"
+						alt="docker"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/denojs-original.svg"
+						alt="deno"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/css3-original.svg"
+						alt="css"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/cplusplus-original.svg"
+						alt="c++"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/markdown-original.svg"
+						alt="markdown"
+						class="logo"
+					/>
+
+					<img
+						src="assets/technology_logos/typescript-original.svg"
+						alt="typescript"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/c-original.svg"
+						alt="c"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/scala-original.svg"
+						alt="scala"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/blender-original.svg"
+						alt="blender 3d"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/nodejs-original.svg"
+						alt="nodejs"
+						class="logo"
+					/>
+
+					<img
+						src="assets/technology_logos/docker-original.svg"
+						alt="docker"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/denojs-original.svg"
+						alt="deno"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/css3-original.svg"
+						alt="css"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/cplusplus-original.svg"
+						alt="c++"
+						class="logo"
+					/>
+					<img
+						src="assets/technology_logos/markdown-original.svg"
+						alt="markdown"
+						class="logo"
+					/>
+				</div>
+			</section>
+			<section class="contact">
+				<h2>Contact</h2>
+				<svg
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					class="logo-large"
+				>
+					<g id="e_letter">
+						<g id="logo_group_1">
+							<path
+								d="M70.7682 1.5642L0 54.7471H22.2049C45.758 36.6368 70.7682 17.7276 70.7682 17.7276V1.5642Z"
+								fill="#758DE1"
+							/>
+							<path
+								d="M0 54.7471V71.9533C6.57244 66.8032 14.3067 60.82 22.2049 54.7471H0Z"
+								fill="#8782E3"
+							/>
+						</g>
+						<g id="logo_group_2">
+							<path
+								d="M22.2049 54.7471C14.3067 60.82 6.57244 66.8032 0 71.9533H50.2827L70.7682 54.7471H22.2049Z"
+								fill="#9A78E5"
+							/>
+							<path
+								d="M70.7682 71.9533V54.7471L50.2827 71.9533H70.7682Z"
+								fill="#AD6DE8"
+							/>
+						</g>
+						<g id="logo_group_3">
+							<path
+								d="M70.7682 71.9533H50.2827L0 114.187H22.5983L70.7682 71.9533Z"
+								fill="#C063EA"
+							/>
+							<path
+								d="M0 114.187V134L22.5983 114.187H0Z"
+								fill="#D358EC"
+							/>
+						</g>
+						<g id="logo_group_4">
+							<path
+								d="M0 134H70.7682V114.187H22.5983L0 134Z"
+								fill="#E64EEF"
+							/>
+						</g>
+					</g>
+					<g id="l_letter">
+						<g id="logo_group_5">
+							<path
+								d="M91.947 0V114.187H110.543V0H91.947Z"
+								fill="#758DE1"
+							/>
+						</g>
+						<g id="logo_group_6">
+							<path
+								d="M156 134V114.187H110.543V134H156Z"
+								fill="#E64EEF"
+							/>
+							<path
+								d="M110.543 114.187H91.947L110.543 134V114.187Z"
+								fill="#AD6DE8"
+							/>
+						</g>
+					</g>
+				</svg>
+				<a href="contact.html" class="contact-btn">Contact me</a>
+			</section>
+		</div>
+	</body>
 </html>

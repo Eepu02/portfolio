@@ -9,35 +9,9 @@
     transform: scale(1.03);
 }
 
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-time {
-    font-size: 1.5rem;
-}
-
-.card-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .project-img {
     width: 100%;
     border-radius: var(--border-radius);
-}
-
-.related-tech-logo {
-    height: 40px;
-    margin: 3px;
-    filter: brightness(var(--img-brightness));
-}
-
-.card-footer {
-    margin-top: auto;
 }
 
 .card-footer h3 {
