@@ -1,0 +1,23 @@
+@import url(styles/main.css);
+
+main {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--background-color);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    /* width: 80%; */
+    text-align: center;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    box-shadow: -5px -5px 10px var(--light-shadow), 5px 5px 10px var(--dark-shadow);
+}
