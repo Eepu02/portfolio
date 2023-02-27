@@ -94,10 +94,26 @@ button {
 	width: 40px;
 }
 
+main {
+	padding: 1rem;
+}
+
+.script {
+	font-size: 4rem;
+	font-family: "Pacifico", sans-serif;
+	background: linear-gradient(
+		245.05deg,
+		var(--primary-color) 2.97%,
+		var(--secondary-color) 97.45%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
 .card-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	padding: 1rem;
 }
 
 .card {
@@ -110,16 +126,60 @@ button {
 	box-shadow: -5px -5px 10px var(--light-shadow),
 		5px 5px 10px var(--dark-shadow);
 	transition: all 0.5s ease;
+	position: relative;
+}
+
+.card::before {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		-45deg,
+		var(--primary-color) 0%,
+		var(--tertiary-color) 100%
+	);
+	transform: translate3d(0px, 10px, 0) scale(1);
+	filter: blur(20px);
+	opacity: 0;
+	transition: opacity 0.5s;
+	border-radius: inherit;
+}
+
+.card:hover::before {
+	opacity: 0.7;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.card::after {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	inset: 0;
+	background: inherit;
+	border-radius: inherit;
 }
 
 .card:hover {
-	transform: scale(1.05);
+	transform: scale(1.03);
 }
 
 .card-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.card a {
+	color: var(--primary-color);
+}
+
+.card a:hover {
+	text-decoration: underline;
 }
 
 time {
@@ -131,6 +191,10 @@ time {
 	flex-direction: column;
 	justify-content: space-between;
 	margin-top: auto;
+}
+
+.card-footer h3 {
+	color: var(--gray);
 }
 
 .related-tech-logo {

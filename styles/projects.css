@@ -1,34 +1,21 @@
 @import url(styles/main.css);
 
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.card:hover {
-    transform: scale(1.03);
-}
-
 .project-img {
-    width: 100%;
-    border-radius: var(--border-radius);
-}
-
-.card-footer h3 {
-    color: var(--gray);
+	width: 100%;
+	border-radius: var(--border-radius);
 }
 
 @media only screen and (min-width: 800px) {
-    .wide {
-        grid-column: span 2;
-    }
-    .tall {
-        grid-row: span 2;
-    }
-    .wide > .card-footer {
-        flex-direction: row;
-    }
-    .card-container {
-        grid-auto-flow: dense;
-    }
+	.wide {
+		grid-column: span 2;
+	}
+	.tall {
+		grid-row: span 2;
+	}
+	.wide > .card-footer {
+		flex-direction: row;
+	}
+	.card-container {
+		grid-auto-flow: dense;
+	}
 }
