@@ -35,7 +35,7 @@ header {
     margin: 1rem;
     z-index: 2;
     border-radius: var(--border-radius);
-    box-shadow: 0px 10px 10px 0px rgb(0, 0, 0, 0.15);
+    box-shadow: -5px -5px 10px var(--light-shadow), 5px 5px 10px var(--dark-shadow);
 }
 
 .header-items {
