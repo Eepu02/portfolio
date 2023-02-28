@@ -94,10 +94,6 @@ button {
 	width: 40px;
 }
 
-main {
-	padding: 1rem;
-}
-
 .script {
 	font-size: 2rem;
 	font-family: "Pacifico", sans-serif;
@@ -170,8 +166,9 @@ main {
 
 .card-header {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
+	align-items: left;
 }
 
 .card a {
@@ -203,6 +200,16 @@ time {
 	filter: brightness(var(--img-brightness));
 }
 
+.project-img {
+	width: 100%;
+	border-radius: var(--border-radius);
+}
+
+main p,
+main h1 {
+	padding: 0 1rem;
+}
+
 @media only screen and (min-width: 800px) {
 	.content {
 		width: 80%;
@@ -230,5 +237,15 @@ time {
 
 	.script {
 		font-size: 4rem;
+	}
+
+	main {
+		padding: 1rem;
+	}
+
+	.card-header {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
