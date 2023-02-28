@@ -24,6 +24,7 @@ section {
 	align-items: center;
 	margin: 5rem 0 4rem 0;
 	text-align: center;
+	min-height: 70vh;
 }
 
 .tagline-wrapper {
@@ -73,7 +74,7 @@ section {
 }
 
 .scroll-hint {
-	margin: auto;
+	margin-top: auto;
 	width: 6rem;
 	transition: all 1s ease;
 }

@@ -85,7 +85,7 @@ nav {
 	display: block;
 }
 
-button {
+#menu-btn {
 	background-color: var(--bg-color);
 	border: none;
 }
