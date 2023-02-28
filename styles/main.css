@@ -99,7 +99,7 @@ main {
 }
 
 .script {
-	font-size: 4rem;
+	font-size: 2rem;
 	font-family: "Pacifico", sans-serif;
 	background: linear-gradient(
 		245.05deg,
@@ -226,5 +226,9 @@ time {
 
 	header {
 		display: flex;
+	}
+
+	.script {
+		font-size: 4rem;
 	}
 }
