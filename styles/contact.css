@@ -5,3 +5,23 @@ main {
 	padding: 1rem;
 	background-color: var(--background-color);
 }
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.card {
+	flex: 1;
+}
+
+.card-header {
+	flex-direction: row;
+}
+
+@media only screen and (min-width: 800px) {
+	.card-container {
+		flex-direction: row;
+	}
+}
